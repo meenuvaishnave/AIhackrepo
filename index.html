@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- --------- CSS ---------- -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Title -->
+    <title>OvaAI | Revolutionizing Women's Health with AI</title>
+</head>
+<body>
+    
+    <div class="container">
+        <!-- --------------- HEADER --------------- -->
+        <nav id="header">
+            <div class="nav-logo">
+                <p class="nav-name">OvaAI</p>
+                <span>.</span>
+            </div>
+            <div class="nav-menu-btn" id="menu-btn">
+                <i class="ri-menu-line"></i>
+        </nav>
+
+        <!-- -------------- MAIN ---------------- -->
+        <main class="wrapper">
+            <!-- -------------- FEATURED BOX ---------------- -->
+            <section class="featured-box" id="home">
+                <div class="featured-text">
+                    <div class="featured-text-card">
+                        <span>PCOS/PCOD</span>
+                    </div>
+                    <div class="featured-name">
+                        <p>Whether a doubt having PCOS/PCOD <span class="typedText"></span></p>
+                    </div>
+                    <div class="featured-text-info">
+                        <p>Welcome to the PCOS/PCOD Care Platform - Empowering women's health with AI-driven insights and personalized care.</p>
+                    </div>
+                    <div class="featured-text-btn">
+                        <button onclick="location.href='#pcos-checker'" class="btn blue-btn">Have a test</button>
+                    </div>
+                </div>
+                <div class="featured-image">
+            <div class="image">
+                <img src="image4.jpeg" alt="avatar">
+                </div>
+                <div class="scroll-icon-box">
+                    <a href="#aboutus" class="scroll-btn">
+                        <i class="ri-arrow-down-line"></i>
+                        <p>Scroll Down</p>
+                    </a>
+                </div>
+            </section>
+
+            <!-- -------------- ABOUT SECTION ---------------- -->
+            <section class="section" id="about">
+                <div class="top-header">
+                    <h1>About Me</h1>
+                </div>
+                <div class="row">
+                    <div class="featured-image">
+                        <div class="image">
+                            <img src="image.jpeg" alt="About Us">
+                        </div>
+                    </div>
+                    <div class="col"></div>
+                        <div class="about-info">
+                            <h3>Suffering from PCOS/PCOD?</h3>
+                            <p>Start your journey towards better health. Get into the PCOS/PCOD detection process with our AI-driven application today.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- -------------- DETECTION SECTION ---------------- -->
+<section id="pcos-checker" class="pcos-section">
+    <div class="wrapper">
+        <h1>PCOS/PCOD Detection</h1>
+        <p>Input your details to check your symptoms</p>
+        <form id="pcos-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required><br><br>
+
+            <p>Symptoms (check all that apply):</p>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="symptoms" value="Irregular Periods"> Irregular Periods</label><br>
+                <label><input type="checkbox" name="symptoms" value="Weight Gain"> Weight Gain</label><br>
+                <label><input type="checkbox" name="symptoms" value="Acne"> Acne</label><br>
+                <label><input type="checkbox" name="symptoms" value="Hair Loss"> Hair Loss</label><br>
+                <label><input type="checkbox" name="symptoms" value="Excess Hair Growth"> Excess Hair Growth</label>
+            </div><br>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <!-- Output will be displayed here -->
+        <div id="output"></div>
+    </div>
+</section>
+
+            <!-- -------------- CONTACT SECTION ---------------- -->
+            <section class="section" id="contact">
+                <div class="top-header">
+                    <h1>Get in touch</h1>
+                    <span>with doctors</span>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="contact-info">
+                            <h2>Consult a doctor? Register beside<i class="ri-corner-right-down-line"></i></h2>
+                            <p><i class="ri-mail-line"></i> Email: OvaAI.@gmail.com</p>
+                            <p><i class="ri-phone-line"></i> Tel: +91 8839229154</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-control">
+                            <div class="form-inputs">
+                                <input type="text" class="input-field" placeholder="Name">
+                                <input type="text" class="input-field" placeholder="Email">
+                            </div>
+                            <div class="text-area">
+                                <textarea placeholder="Message"></textarea>
+                            </div>
+                            <div class="form-button">
+                                <button class="btn">Send <i class="ri-send-plane-line"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- -------------- DOCTOR DIRECTORY SECTION ---------------- -->
+<section class="section" id="doctors">
+    <div class="top-header">
+        <h1>Our Medical Experts</h1>
+        <span>Trusted gynecologists ready to help</span>
+    </div>
+    <div class="doctor-cards">
+        <div class="doctor-card">
+            <img src="doctor1.jpeg" alt="Dr. Priya Sharma">
+            <h3>Dr. Priya Sharma</h3>
+            <p>MBBS, MD - Gynecology</p>
+            <p>Hyderabad, India</p>
+            <button class="btn blue-btn">Book Now</button>
+        </div>
+        <div class="doctor-card">
+            <img src="doctor2.jpeg" alt="Dr. Rakesh Verma">
+            <h3>Dr. Rakesh Verma</h3>
+            <p>MBBS, MS - Reproductive Health</p>
+            <p>Bangalore, India</p>
+            <button class="btn blue-btn">Book Now</button>
+        </div>
+        <!-- Add more doctors similarly -->
+    </div>
+</section>
+
+<!-- ========== CYCLE TRACKER SECTION ========== -->
+<section id="cycle-tracker" class="pcos-section">
+    <div class="wrapper">
+        <h1>Cycle Tracker</h1>
+        <p>Track your menstrual cycle and get insights</p>
+
+        <form id="cycle-form">
+            <label for="last-period">Last Period Date:</label>
+            <input type="date" id="last-period" required><br><br>
+
+            <label for="cycle-length">Average Cycle Length (days):</label>
+            <input type="number" id="cycle-length" value="28" required><br><br>
+
+            <button type="submit" id="track-btn">Track</button>
+
+        </form>
+
+        <div id="cycle-output" style="display: none; margin-top: 20px;"></div>
+    </div>
+</section>
+
+<!-- --------------- FOOTER --------------- -->
+<footer>
+    <div class="top-footer">
+        <p>OvaAI</p>
+    </div>
+    <div class="middle-footer">
+        <ul class="footer-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#pcos-checker">Detection</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    <div class="bottom-footer">
+        <p>Copyright &copy; <a href="#home">OvaAI</a> - All rights reserved</p>
+    </div>
+</footer>
+</div>
+
+<!-- ----- SCROLL REVEAL JS Link----- -->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<!-- ----- MAIN JS ----- -->
+<script src="script.js"></script>
+
+<!-- ----- KOMMUNICATE CHATBOT ----- -->
+<script>
+    (function(d, m){
+        var kommunicateSettings = {
+          "appId":"34f44a379b05d2df6cf76d56c69a436f4",
+          "popupWidget":true,
+          "automaticChatOpenOnNavigation":true
+        };
+        var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+        s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+        var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+        window.kommunicate = m; m._globals = kommunicateSettings;
+    })(document, window.kommunicate || {});
+</script>
+
+</body>
+</html>
